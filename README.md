@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/codebase-first%20pass-2d7ff9.svg" alt="Codebase First Pass" />
     <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="MIT License" />
     <a href="https://agentskills.io/home">
-        <img src="https://img.shields.io/badge/Agent%20Skills-Compatible-2ea44f.svg" alt="Agent Skills Compatible" />
+        <img src="https://img.shields.io/badge/Agent%20Skills-Compatible-purple.svg" alt="Agent Skills Compatible" />
     </a>
 </p>
 
