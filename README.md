@@ -31,13 +31,11 @@ It uses the [Agent Skills](https://agentskills.io/home) format, so it works smoo
 
 ## Installing
 
-You can install this skill into Claude Code, Codex, Gemini, Cursor, and more from the local directory:
+You can install this skill into Claude Code, Codex, Gemini, Cursor, and more by using `npx`:
 
 ```bash
-npx skills add ./git-codebase-preflight-skill --skill git-codebase-preflight
+npx skills add https://github.com/n0an/git-codebase-preflight-skill --skill git-codebase-preflight
 ```
-
-If you publish the repository later, replace the local path with your Git URL.
 
 If you get the error `npx: command not found`, it means you do not currently have Node installed. You need to run this command to install Node through Homebrew:
 
