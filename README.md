@@ -68,11 +68,13 @@ You can also trigger the skill using natural language:
 
 > Use the Git Codebase Preflight skill to inspect this repository before reading the code.
 
-By default, the skill returns a concise summary in chat. If you want the results saved, ask it to write a report file:
+By default, the skill creates `git-codebase-preflight-report.md` in the current working directory and also returns a concise summary in chat:
 
-> Use `git-codebase-preflight` and save the report
+> Use `git-codebase-preflight`
 
-When asked explicitly, the skill will create `git-codebase-preflight-report.md` in the current working directory.
+If you want a quick run without creating a file, ask for a chat-only pass:
+
+> Use `git-codebase-preflight`, but do not generate a report file
 
 
 ## Why Use an Agent Skill for This?

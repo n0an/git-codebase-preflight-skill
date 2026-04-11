@@ -37,8 +37,9 @@ If doing partial work, load only the relevant reference files.
 - Use revert and hotfix frequency as a proxy for delivery stress, testing gaps, or weak release processes.
 - After the git pass, recommend a concrete reading order: the first files, folders, or time periods to inspect next.
 - If the user asks for a review, findings should focus on risk signals and next inspection targets, not generic repository summaries.
-- Default to a concise chat summary unless the user explicitly asks to save the report.
-- If the user asks to save the report, create `git-codebase-preflight-report.md` in the current working directory.
+- By default, create `git-codebase-preflight-report.md` in the current working directory.
+- Also return a concise summary in chat unless the user explicitly asks for file-only output.
+- If the user explicitly asks not to generate a file, do the analysis in chat only.
 
 
 ## Output Format
@@ -61,11 +62,17 @@ For each important signal:
 
 If the user asks you to run this workflow on the current repository, run the commands directly instead of returning a generic checklist.
 
+Default deliverable behavior:
+
+1. Create `git-codebase-preflight-report.md` with the full structured write-up.
+1. Return a concise summary in chat with the highest-signal findings.
+1. Skip creating the file only if the user explicitly asks for a chat-only run.
+
 If the output is large:
 
 1. Summarize the most important findings in chat.
 1. Avoid dumping raw command output unless it materially supports the conclusion.
-1. Save the full write-up to `git-codebase-preflight-report.md` only if the user explicitly asks for a saved report.
+1. Put the detailed findings in `git-codebase-preflight-report.md`.
 
 Example output:
 
