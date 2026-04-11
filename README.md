@@ -47,6 +47,8 @@ And if that fails, it usually means you need to [install Homebrew](https://brew.
 
 When using `npx`, you can select exactly which agents you want to use during the installation. You can also select whether the skill should be installed just for one project, or whether it should be made available for all your projects.
 
+This skill is a good candidate for global install because it is useful across many repositories, while keeping most of its detail in reference files that are only loaded when needed.
+
 Alternatively, you can clone this whole repository and install it however you want.
 
 
