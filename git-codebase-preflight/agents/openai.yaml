@@ -1,0 +1,8 @@
+interface:
+  display_name: "Git Codebase Preflight"
+  short_description: "Audits a repo through git before reading code."
+  brand_color: "#F05032"
+  default_prompt: "Use $git-codebase-preflight to inspect this repository before we start reading files."
+
+policy:
+  allow_implicit_invocation: true
