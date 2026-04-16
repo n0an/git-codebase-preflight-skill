@@ -31,7 +31,29 @@ It uses the [Agent Skills](https://agentskills.io/home) format, so it works smoo
 
 ## Installing
 
-You can install this skill into Claude Code, Codex, Gemini, Cursor, and more by using `npx`:
+### Claude Code
+
+```bash
+# Register the skills marketplace
+/plugin marketplace add n0an/skills
+
+# Install this skill
+/plugin install git-codebase-preflight@n0an/skills
+```
+
+Or install directly:
+
+```bash
+/plugin install n0an/git-codebase-preflight-skill
+```
+
+### Gemini
+
+```bash
+gemini extensions install https://github.com/n0an/git-codebase-preflight-skill.git --consent
+```
+
+### npx (Claude Code, Codex, Gemini, Cursor)
 
 ```bash
 npx skills add https://github.com/n0an/git-codebase-preflight-skill --skill git-codebase-preflight

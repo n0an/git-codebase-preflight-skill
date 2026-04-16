@@ -1,0 +1,5 @@
+{
+  "name": "git-codebase-preflight",
+  "version": "1.0.0",
+  "description": "Audits a repository through git history before reading source files"
+}
