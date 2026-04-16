@@ -31,29 +31,7 @@ It uses the [Agent Skills](https://agentskills.io/home) format, so it works smoo
 
 ## Installing
 
-### Claude Code
-
-```bash
-# Register the skills marketplace
-/plugin marketplace add n0an/skills
-
-# Install this skill
-/plugin install git-codebase-preflight@n0an/skills
-```
-
-Or install directly:
-
-```bash
-/plugin install n0an/git-codebase-preflight-skill
-```
-
-### Gemini
-
-```bash
-gemini extensions install https://github.com/n0an/git-codebase-preflight-skill.git --consent
-```
-
-### npx (Claude Code, Codex, Gemini, Cursor)
+You can install this skill into Claude Code, Codex, Gemini, Cursor, and more by using `npx`:
 
 ```bash
 npx skills add https://github.com/n0an/git-codebase-preflight-skill --skill git-codebase-preflight
@@ -70,6 +48,20 @@ And if that fails, it usually means you need to [install Homebrew](https://brew.
 When using `npx`, you can select exactly which agents you want to use during the installation. You can also select whether the skill should be installed just for one project, or whether it should be made available for all your projects.
 
 This skill is a good candidate for global install because it is useful across many repositories, while keeping most of its detail in reference files that are only loaded when needed.
+
+### Alternative install methods
+
+**Claude Code:**
+
+```bash
+/plugin install n0an/git-codebase-preflight-skill
+```
+
+**Gemini:**
+
+```bash
+gemini extensions install https://github.com/n0an/git-codebase-preflight-skill.git --consent
+```
 
 Alternatively, you can clone this whole repository and install it however you want.
 
