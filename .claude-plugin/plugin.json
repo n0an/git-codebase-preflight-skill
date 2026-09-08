@@ -2,7 +2,13 @@
   "name": "git-codebase-preflight",
   "description": "Audits a repository through git history before reading source files",
   "version": "1.0.0",
-  "author": "Anton Novoselov",
+  "author": {
+    "name": "Anton Novoselov",
+    "url": "https://github.com/n0an"
+  },
   "license": "MIT",
-  "repository": "https://github.com/n0an/git-codebase-preflight-skill"
+  "repository": "https://github.com/n0an/git-codebase-preflight-skill",
+  "skills": [
+    "./git-codebase-preflight/"
+  ]
 }
